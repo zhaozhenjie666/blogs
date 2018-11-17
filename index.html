@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="renderer" content="webkit">
+    <meta name="applicable-device" content="pc,mobile">
+    <meta name="HandheldFriendly" content="true">
+    <title>ZackMen个人博客</title>
+    <meta name="Description" itemprop="description" content="ZackMen个人博客，是一个文艺男码农个人网站，分享工作经验和生活！！！">
+    <meta name="keywords" content="个人博客,草根站长,技术宅,"/>
+
+
+    <!--[if lt IE 9]>
+    <script src="../blog/js/html5-css3.js"></script><![endif]-->
+    <!--[if IE]>
+    <div class="tixing">
+        <strong>温馨提示：感谢您访问本站，经检测您使用的浏览器为IE浏览器，为了获得更好的浏览体验，请使用Chrome、Firefox或其他浏览器。</strong>
+    </div>
+    <![endif]-->
+
+
+    <link rel="stylesheet" id="nfgc-main-style-css" href="index.css" type="text/css" media="all">
+
+    <script type="text/javascript" src="../blog/js/jquery.js"></script>
+    <script type="text/javascript" src="../blog/js/scrollmonitor.js"></script>
+    <script type="text/javascript" src="../blog/js/stickySidebar.js"></script>
+    <script type="text/javascript" src="../blog/js/wow.js"></script>
+    <script type="text/javascript" src="../blog/js/slides.js"></script>
+    <script type='text/javascript' src='../blog/js/script.js'></script>
+</head>
+
+
+<div class="xgsm">
+<div id="menu2" class="menu">
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">技术</a></li>
+        <li><a href="line.html">留言</a></li>
+        <li><a href="../blog/project/index.html">微简历</a></li>
+        <li><a href="#">心情</a></li>
+
+    </ul>
+    <div class="cls"></div>
+</div>
+
+    <script language="javascript">
+        $(document).ready(function() {
+            $("#menu2 li a").wrapInner( '<span class="out"></span>' );
+
+            $("#menu2 li a").each(function() {
+                $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+            });
+
+            $("#menu2 li a").hover(function() {
+                $(".out",	this).stop().animate({'top':	'40px'},	300);
+                $(".over",	this).stop().animate({'top':	'0px'},		300);
+
+            }, function() {
+                $(".out",	this).stop().animate({'top':	'0px'},		300);
+                $(".over",	this).stop().animate({'top':	'-40px'},	300);
+            });
+
+        });
+</script>
+
+
+
+<div class="banner">
+    <ul class="bannerbox">
+        <li class="active"><a href=""><img src="../blog/image/zzbw.jpg" alt=""></a></li>
+        <li><a href=""><img src="../blog/image/gyw.jpg" alt=""></a></li>
+        <li><a href=""><img src="../blog/image/lxrj.jpg" alt=""></a></li>
+        <li><a href=""><img src="../blog/image/qdfx.jpg" alt=""></a></li>
+        <li><a href=""><img src="../blog/image/lyb.jpg" alt=""></a></li>
+        <li><a href=""><img src="../blog/image/sysy.jpg" alt=""></a></li>
+        <li><a href=""><img src="../blog/image/sytp.jpg" alt=""></a></li>
+    </ul>
+    <ul class="dianbox">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<script>
+    let dians = document.querySelectorAll(".dianbox li");
+    let imgs=document.querySelectorAll(".bannerbox li");
+    dians.forEach(function(val,index){
+        val.onclick=function(){
+            for(let i=0;i<dians.length;i++){
+                dians[i].classList.remove("active");
+                imgs[i].classList.remove("active");
+            }
+            val.classList.add("active");
+            imgs[index].classList.add("active");
+            now = index;
+        }
+    });
+    let now = 0;
+    let st=setInterval(fn,3000);
+    function fn(){
+        now++;
+        if (now===dians.length) {
+            now=0;
+        }
+        for(let i=0;i<dians.length;i++){
+            dians[i].classList.remove("active");
+            imgs[i].classList.remove("active");
+        }
+        dians[now].classList.add("active");
+        imgs[now].classList.add("active");
+    }
+    let bann = document.querySelector(".banner");
+    bann.onmouseover=function(){
+        clearInterval(st);
+    }
+    bann.onmouseout=function(){
+        st=setInterval(fn,3000)
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+<body class="home blog">
+<div id="page" class="hfeed site">
+
+
+    <!-- #masthead -->
+    <nav class="breadcrumb">
+        <div id="scrolldiv">
+            <div class="bull">
+            </div>
+            <div class="scrolltext">
+                <ul style="margin-top: 0px;">
+                    <li class="scrolltext-title"><a href="#" rel="bookmark"
+                                                    target="_blank">欢迎来到ZackMen个人博客~~</a></li>
+                    <li class="scrolltext-title"><a href="#" rel="bookmark" target="_blank">谢谢参观！！！</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript">$(document).ready(function () {
+            $("#scrolldiv").textSlider({line: 1, speed: 1000, timer: 2000});
+        })</script>
+    </nav>
+
+
+
+<div id="content" class="site-content">
+<div class="clear"></div>
+<div id="gensui">
+<section id="primary" class="content-area">
+<main id="main" class="site-main" role="main">
+    <div id="post_list_box" class="border_gray">
+        <article id="post-687" class="archive-list shuangshu">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/10/20
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/api_thumb_450%20(1).jpg"
+                        alt="微商很LOW吗？有点~但是赚钱啊！"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="微商很LOW吗？有点~但是赚钱啊！">微商很LOW吗？有点~但是赚钱啊！</a></h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    近几年一直在做跟流量有关的事情，不管是SEO也好，自媒体也好，还是今年很火的抖音也好，玩法在本质上都是相同的，只是平台不同罢了，而大部分的公司和产品，都需要流量的支撑来持续的发展。
+                    最近拜访了一些玩流量的大咖，几乎不约而同的都在做着同一件事...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">运营相关的</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;245 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#" rel="nofollow">5 条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-682" class="archive-list ">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/08/22
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/web-browser-6400473.jpg"
+                        alt="花了几十万买了一个双拼域名……"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="花了几十万买了一个双拼域名……">花了几十万买了一个双拼域名……</a></h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    上个月公司决定购买一个双拼域名，历经波折才完成交易。因为域名所有者似乎并没有想要出售的意愿，还嘱咐域名服务商帮其隐藏联系信息，免得总有人骚扰他来咨询购买域名的事情。...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">运营相关的</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;903 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#" rel="nofollow">14
+                        条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-676" class="archive-list shuangshu">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/07/05
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/digital-background-6249857.jpg"
+                        alt="远程连接身份验证错误，又找不到加密Oracle修正"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="远程连接身份验证错误，又找不到加密Oracle修正">远程连接身份验证错误，又找不到加密Oracle修正</a>
+                </h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    昨天想用远程桌面连接登陆服务器的时候跳出来一个对话框，提示：发生身份验证错误，要求的函数不受支持。
+                    查阅了度娘，百度百科上有很多方法，都是改本地策略或者删除微软更新的补丁，具体操作方法如下： 策略路径：“计算机配置”-&gt;“管理模板”-...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">偶尔技术宅</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;26,499 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#" rel="nofollow">28
+                        条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-674" class="archive-list ">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/06/08
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/ns38779685.jpg"
+                        alt="现如今SEO很尴尬，普通SEOer做到什么程度月薪能15K以上？"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="现如今SEO很尴尬，普通SEOer做到什么程度月薪能15K以上？">现如今SEO很尴尬，普通SEOer做到什么程度月薪能15K以上？</a>
+                </h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    最近本地的一个SEO群里有个大神想换工作，辞职后找了很久都没有找到合适的，现在的SEOer处境很尴尬，中小企业不愿意花高价去养短期内看不到太大效益的SEO人员
+                    ，而大公司则更愿意直接砸钱去做短平快的流量获取方式，不需要SEO。 所以...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">运营相关的</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;1,005 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#">10
+                        条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-672" class="archive-list shuangshu">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/04/26
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/ssfsfd_450%20.jpg!"
+                        alt="新建txt记事本变成tst文档格式的解决方案"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="新建txt记事本变成tst文档格式的解决方案">新建txt记事本变成tst文档格式的解决方案</a>
+                </h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    之前不知道装了什么软件，导致后来新建的记事本扩展名都变成了tst，本来没啥太大的影响，但是把文件传给同事时，人家打不开tst格式的，总不能每次新建后重新更改扩展名吧。所以就百度了一下解决方法。
+                    网上有很多方法都说得挺复杂的...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">偶尔技术宅</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;11,114 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="http://www.loveif.com/post/672.html#comments" rel="nofollow">9 条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-670" class="archive-list ">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/04/15
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/apippp_thumb_450%20(1).jpg"
+                        alt="网站域名被移动屏蔽怎么办？找工信部投诉就行了！"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="网站域名被移动屏蔽怎么办？找工信部投诉就行了！">网站域名被移动屏蔽怎么办？找工信部投诉就行了！</a>
+                </h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    个人博客不知道从什么时候开始，被移动屏蔽了，持续时间至少有1年之久，也可能更久。以前用的都是电信，一直没有察觉，去年公司网络有一条线路是移动宽带，偶然发现网站无法正常访问，一开始以为是服务器问题，测试了几次后发现竟然是域名被屏蔽了。...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">运营相关的</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;17,281 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="http://www.loveif.com/post/670.html#comments" rel="nofollow">7 条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-667" class="archive-list shuangshu">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/04/06
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/api_thumb_5223%20(1).jpg"
+                        alt="流量推广运营的三个真理以及实操方法"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="流量推广运营的三个真理以及实操方法">流量推广运营的三个真理以及实操方法</a></h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    看到一篇不错的讲述流量推广运营的文章，有点长，但值得一看，在此分享给大家，同时晓兔个人博客自己也做个记录，原文如下，未有删减：
+                    做流量本质上是做用户，做产品。这不是雇几个小孩花钱买广告， 或雇几个商务运营就可以自动解决的事情。 一个错误是，...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">运营相关的</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;25,319 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#" rel="nofollow">5 条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-666" class="archive-list ">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/04/01
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/originoo_29270411.jpg"
+                        alt="这是个人博客，博客是什么网站，用的系统和模板？"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="这是个人博客，博客是什么网站？">这是个人博客，博客是什么网站？</a>
+                </h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    现在的个人博客大部分是个人站长或者自媒体人士在更新和使用。 最初个人博客...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">建站之笔记</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;14,395 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#" rel="nofollow">3 条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-663" class="archive-list shuangshu">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/03/11
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/seoriginoo_103658072.jpg"
+                        alt="SEO是一门玄学？来粗略聊一聊引流推广吧"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="SEO是一门玄学？来粗略聊一聊引流推广吧">SEO是一门玄学？来粗略聊一聊引流推广吧</a></h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                   有个网友说：SEO属于玄学范畴。刚看到的时候没反应过来，想了几秒突然就忍不住笑了。这话可能在一部分SEOer中已经悄悄流传很久了，不过第一次听到，想来真是觉得非常贴切。
+                    SEO在业界，似乎从来没有一...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">运营相关的</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;4,030 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#" rel="nofollow">5 条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+        <article id="post-660" class="archive-list ">
+            <div class="post-date-ribbon">
+                <div class="corner"></div>
+                2016/02/11
+            </div>
+            <figure class="thumbnail">
+                <a href="#"><img
+                        src="../blog/image/p_ictcsn13a7ygw8d7eoj8tuclw338qmuv.jpg"
+                        alt="走出舒适区，春节放假心甘情愿继续工作"/></a>
+            </figure>
+            <header class="entry-header">
+                <h2 class="entry-title"><a href="#"
+                                           title="走出舒适区，春节放假心甘情愿继续工作">走出舒适区，春节放假心甘情愿继续工作</a></h2>
+            </header>
+            <div class="entry-content">
+                <div class="archive-content">
+                    公司昨天开始已经放假，但是对于很多小伙伴来说，依然要时刻保持着工作状态。以前我很难理解那些假期还努力工作的人，也很讨厌遇见动不动就让员工加班的老板。但是自从今年加入了一家创业公司，对于随时随刻保持工作状态可以说已经是很习以为常的事情了，虽然...
+                </div>
+                <div class="entry-meta">
+                    <span class="post_cat"><i class="fa fa-folder" aria-hidden="true"></i>&nbsp;<a
+                            rel="nofollow" href="#"
+                            rel="category tag">生活中的事</a></span>
+                    <span class="views"><i class="fa fa-users"
+                                           aria-hidden="true"></i>&nbsp;1,696 人飘过</span>
+                    <span class="comment"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;<a
+                            href="#" rel="nofollow">2 条评论</a></span>
+
+                </div>
+                <div class="readMore"><a href="#" target="_blank"
+                                         rel="nofollow">阅读全文</a></div>
+                <div class="clear"></div>
+            </div>
+            <!-- .entry-content -->        </article>
+        <!-- #post -->
+        <!-- ad -->
+
+
+        <!-- end: ad -->
+
+    </div>
+</main>
+<!-- .site-main -->
+
+
+
+<nav class="navigation pagination" role="navigation">
+    <div class="nav-links">
+        <span class='page-numbers current'><span class='pages'>第</span><input
+                class='current-page-selector' id='current-page-selector' type='text' max='56' size='2'
+                name='paged_selectors' value='1'><span class='pagesym'>1</span><span
+                class='pages'>页</span></span><a class='page-numbers'
+                                                href='#' title='第 2 页'>2</a><a
+            class='page-numbers' href='#' title='第 3 页'>3</a><a
+            class='page-numbers' href='#' title='第 4 页'>4</a><span
+            class="page-numbers dots">...</span><a class='page-numbers'
+                                                   href='#'
+                                                   title='最后一页'>10</a><span class="next"></span>
+    </div>
+</nav>
+</section>
+<!-- .content-area -->
+
+
+<div id="sidebar" class="widget-area">
+<aside id="zonghe_post-2" class="widget widget_zonghe_post">
+    <div id="top_post" class="right_box border_gray">
+        <div class="right_box_content">
+            <ul id="top_post_filter">
+                <li id="zhan_post" class="top_post_filter_active">站长推荐</li>
+                <li id="men_post" class="">热门文章</li>
+                <li id="ping_post" class="">热评文章</li>
+                <div class="clear"></div>
+            </ul>
+
+
+
+            <a class="top_post_item zhan_post" href="#"
+               title="最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》" style="display: none;" target="_blank"><img
+                    src="../blog/image/02.jpg"
+                    alt="最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》"/>
+
+                <div class="news-inner"><p>最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》</p><span
+                        class="views">阅读 2,660</span><span class="comment">2016/03/10</span></div>
+                <div class="clear"></div>
+            </a>
+
+
+            <a class="top_post_item zhan_post" href="#"
+               title="最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》" style="display: none;" target="_blank"><img
+                    src="../blog/image/02.jpg"
+                    alt="最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》"/>
+
+                <div class="news-inner"><p>最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》</p><span
+                        class="views">阅读 2,660</span><span class="comment">2016/03/10</span></div>
+                <div class="clear"></div>
+            </a>
+
+
+            <a class="top_post_item zhan_post" href="#"
+               title="最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》" style="display: none;" target="_blank"><img
+                    src="../blog/image/02.jpg"
+                    alt="最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》"/>
+
+                <div class="news-inner"><p>最后一个M2剧场《圣德太子和小野妹子的恐怖宿舍》</p><span
+                        class="views">阅读 2,660</span><span class="comment">2016/03/10</span></div>
+                <div class="clear"></div>
+            </a>
+
+
+            <a class="top_post_item men_post" href="#"
+               title="远程连接身份验证错误，又找不到加密Oracle修正(26,499 人阅读)" style="display: block;"
+               target="_blank"><img
+                    src="../blog/image/01.jpg"
+                    alt="远程连接身份验证错误，又找不到加密Oracle修正">
+                <div class="news-inner"><p>远程连接身份验证错误，又找不到加密Oracle修正</p><span
+                        class="views">阅读 26,499</span><span class="comment">2016/07/05</span></div>
+                <div class="clear"></div>
+            </a>
+
+            <a class="top_post_item men_post" href="#"
+               title="远程连接身份验证错误，又找不到加密Oracle修正(26,499 人阅读)" style="display: block;"
+               target="_blank"><img
+                    src="../blog/image/01.jpg"
+                    alt="远程连接身份验证错误，又找不到加密Oracle修正">
+                <div class="news-inner"><p>远程连接身份验证错误，又找不到加密Oracle修正</p><span
+                        class="views">阅读 26,499</span><span class="comment">2016/07/05</span></div>
+                <div class="clear"></div>
+            </a>
+
+            <a class="top_post_item men_post" href="#"
+               title="远程连接身份验证错误，又找不到加密Oracle修正(26,499 人阅读)" style="display: block;"
+               target="_blank"><img
+                    src="../blog/image/01.jpg"
+                    alt="远程连接身份验证错误，又找不到加密Oracle修正">
+                <div class="news-inner"><p>远程连接身份验证错误，又找不到加密Oracle修正</p><span
+                        class="views">阅读 26,499</span><span class="comment">2016/07/05</span></div>
+                <div class="clear"></div>
+            </a>
+
+            <a class="top_post_item men_post" href="#"
+               title="远程连接身份验证错误，又找不到加密Oracle修正(26,499 人阅读)" style="display: block;"
+               target="_blank"><img
+                    src="../blog/image/01.jpg"
+                    alt="远程连接身份验证错误，又找不到加密Oracle修正">
+                <div class="news-inner"><p>远程连接身份验证错误，又找不到加密Oracle修正</p><span
+                        class="views">阅读 26,499</span><span class="comment">2016/07/05</span></div>
+                <div class="clear"></div>
+            </a>
+
+
+            <a class="top_post_item ping_post" href="#"
+               title="花了几十万买了一个双拼域名…… (14条评论)" style="display: block;" target="_blank"><img
+                src="../blog/image/s3.jpg"
+                alt="花了几十万买了一个双拼域名……">
+            <div class="news-inner"><p>花了几十万买了一个双拼域名……</p><span class="views">评论 14</span><span
+                    class="comment">2016/08/22</span></div>
+            <div class="clear"></div>
+        </a>
+
+
+            <a class="top_post_item ping_post" href="#"
+               title="花了几十万买了一个双拼域名…… (14条评论)" style="display: block;" target="_blank"><img
+                    src="../blog/image/s3.jpg"
+                    alt="花了几十万买了一个双拼域名……">
+                <div class="news-inner"><p>花了几十万买了一个双拼域名……</p><span class="views">评论 14</span><span
+                        class="comment">2016/08/22</span></div>
+                <div class="clear"></div>
+            </a>
+
+            <a class="top_post_item ping_post" href="#"
+               title="花了几十万买了一个双拼域名…… (14条评论)" style="display: block;" target="_blank"><img
+                    src="../blog/image/s3.jpg"
+                    alt="花了几十万买了一个双拼域名……">
+                <div class="news-inner"><p>花了几十万买了一个双拼域名……</p><span class="views">评论 14</span><span
+                        class="comment">2016/08/22</span></div>
+                <div class="clear"></div>
+            </a>
+
+            <a class="top_post_item ping_post" href="#"
+               title="花了几十万买了一个双拼域名…… (14条评论)" style="display: block;" target="_blank"><img
+                    src="../blog/image/s3.jpg"
+                    alt="花了几十万买了一个双拼域名……">
+                <div class="news-inner"><p>花了几十万买了一个双拼域名……</p><span class="views">评论 14</span><span
+                        class="comment">2016/08/22</span></div>
+                <div class="clear"></div>
+            </a>
+
+            <a class="top_post_item ping_post" href="#"
+               title="花了几十万买了一个双拼域名…… (14条评论)" style="display: block;" target="_blank"><img
+                    src="../blog/image/s3.jpg"
+                    alt="花了几十万买了一个双拼域名……">
+                <div class="news-inner"><p>花了几十万买了一个双拼域名……</p><span class="views">评论 14</span><span
+                        class="comment">2016/08/22</span></div>
+                <div class="clear"></div>
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="clear"></div>
+</aside>
+
+
+
+<aside id="recent_comments-2" class="widget widget_recent_comments"><h3 class="widget-title"><span
+        class="cat">近期评论</span></h3>
+
+    <div id="related-medias">
+        <ul class="media-list">
+            <li class="item"><p class="y-left img-wrap"><img alt='网站建设'
+                                                             src='../blog/image/latin_a.png'
+                                                             class='avatar avatar-56 photo' height='56'
+                                                             width='56'/></p>
+
+                <div class="media-info">
+                    <div class="media-inner"><p class="media-name">网站建设</p>
+
+                        <p class="media-des"><a rel="nofollow" target="_blank"
+                                                href="#">这文章不错，值得收藏</a>
+                        </p></div>
+                </div>
+            </li>
+
+            <li class="item"><p class="y-left img-wrap"><img alt='技术达人'
+                                                             src='../blog/image/latin_d.png'
+                                                             class='avatar avatar-56 photo' height='56'
+                                                             width='56'/></p>
+
+                <div class="media-info">
+                    <div class="media-inner"><p class="media-name">技术达人</p>
+
+                        <p class="media-des">这文章不错，值得收藏</a></p></div>
+                </div>
+            </li>
+
+            <li class="item"><p class="y-left img-wrap"><img alt='游客'
+                                                             src='../blog/image/latin_m.png'
+                                                             class='avatar avatar-56 photo' height='56'
+                                                             width='56'/></p>
+
+                <div class="media-info">
+                    <div class="media-inner"><p class="media-name">游客</p>
+
+                        <p class="media-des">666</a></p></div>
+                </div>
+            </li>
+
+            <li class="item"><p class="y-left img-wrap"><img alt='网站建设'
+                                                             src='../blog/image/latin_p.png'
+                                                             class='avatar avatar-56 photo' height='56'
+                                                             width='56'/></p>
+
+                <div class="media-info">
+                    <div class="media-inner"><p class="media-name">网站建设</p>
+
+                        <p class="media-des"><a rel="nofollow" target="_blank"
+                                                href="#">这文章不错，值得收藏</a>
+                        </p></div>
+                </div>
+            </li>
+
+            <li class="item"><p class="y-left img-wrap"><img alt='技术达人'
+                                                             src='../blog/image/latin_q.png'
+                                                             class='avatar avatar-56 photo' height='56'
+                                                             width='56'/></p>
+
+                <div class="media-info">
+                    <div class="media-inner"><p class="media-name">技术达人</p>
+
+                        <p class="media-des">这文章不错，值得收藏</a></p></div>
+                </div>
+            </li>
+
+            <li class="item"><p class="y-left img-wrap"><img alt='游客'
+                                                             src='../blog/image/latin_w.png'
+                                                             class='avatar avatar-56 photo' height='56'
+                                                             width='56'/></p>
+
+                <div class="media-info">
+                    <div class="media-inner"><p class="media-name">游客</p>
+
+                        <p class="media-des">666</a></p></div>
+                </div>
+            </li>
+
+
+
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="clear"></div>
+</aside>
+
+
+
+<aside id="custom_html-2" class="widget_text widget widget_custom_html"><h3 class="widget-title"><span
+        class="cat">公益广告</span></h3>
+
+    <div class="textwidget custom-html-widget">
+
+            <div><a href="#" target="_blank" rel="nofollow"><img
+                    src="../blog/image/timg.jpg"
+                    style="max-width: 160px;"/></a></div>
+
+    </div>
+    <div class="clear"></div>
+</aside>
+
+
+<aside id="linkcat-706" class="widget widget_links"><h3 class="widget-title"><span
+        class="cat">赞助商</span></h3>
+    <ul class='xoxo blogroll'>
+        <li><a href="#" rel="nofollow" target="_blank">支付宝</a></li>
+        <li><a href="#" rel="nofollow" target="_blank">苹果</a></li>
+        <li><a href="#" rel="nofollow" target="_blank">百度</a></li>
+        <li><a href="#" rel="nofollow" target="_blank">腾讯</a>
+        </li>
+
+    </ul>
+    <div class="clear"></div>
+</aside>
+
+</div>
+</div>
+<div class="clear"></div>
+</div>
+
+
+<!-- .site-content -->
+<div id="footer" alog-group="log-footer">
+<div class="foot">
+
+<div id="links">
+<ul class="linkcat">
+    <li><strong>友情链接：</strong></li>
+    <li><a href="#" target="_blank">csdn</a></li>
+    <li><a href="#" target="_blank">简书</a></li>
+    <li><a href="#" target="_blank">博客园</a></li>
+    <li><a href="#" target="_blank">掘金</a></li>
+    <li><a href="#" target="_blank">开发者头条</a></li>
+    <li><a href="#" target="_blank">webpsweekly.com</a></li>
+    <li><a href="#" target="_blank">谷歌开发者社区</a></li>
+    <li><a href="#" target="_blank">全栈社区</a></li>
+    <li><a href="#" target="_blank">Hashnode</a></li>
+    <li><a href="#" target="_blank">wdrl</a></li>
+    <li><a href="#" target="_blank">seo技术分享</a></li>
+    <li><a href="#" target="_blank">廖雪锋</a></li>
+    <li><a href="#" target="_blank">玉柏</a></li>
+    <li><a href="#" target="_blank">田永强</a></li>
+    <li><a href="#" target="_blank">ASTA谢</a></li>
+    <li><a href="#" target="_blank">止戈</a></li>
+    <li><a href="#" target="_blank">Skywind Inside</a></li>
+    <li><a href="#" target="_blank">鸟窝</a></li>
+    <li><a href="#" target="_blank">Android开发</a></li>
+
+
+</ul>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="ps">
+<div class="p p2">
+    <div class="p-content">
+        <p class="t2">站点相关</p>
+        <ul>
+            <li><span class="post_spliter">•</span>
+                <a href="#" target="_blank" rel="nofollow">旅行日记</a></li>
+            <li><span class="post_spliter">•</span>
+                <a href="#" target="_blank" rel="nofollow">作品展示</a></li>
+            <li><span class="post_spliter">•</span>
+                <a href="#" target="_blank" rel="nofollow">最新动态</a></li>
+            <li><span class="post_spliter">•</span>
+                <a href="#" target="_blank" rel="nofollow">个人兴趣</a></li>
+        </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="site-info">版权归&nbsp;ZackMen个人博主&nbsp;所有
+        <span class="plxiaoshi">&nbsp; |桂ICP备17009369号-2   &nbsp; | &nbsp; 备案号 <a
+            href="#" target="_blank" rel="nofollow">Blogs</a></span><span
+            class="footer-tag">&nbsp; | &nbsp; All Rights Reserved. Theme Dobby Made By Vtrois. <a href="#" target="_blank" rel="nofollow">版权所有</a> &nbsp; | &nbsp;  <a
+            href="#" target="_blank" rel="nofollow"></a></span>
+
+
+
+    </div>
+</div>
+<div class="p p3">
+    <div class="p-content">
+        <p class="t2">感谢您关注我</p>
+
+        <div class="qcode clxearfi">
+            <div class="img-container">
+                <img src="../blog/image/08.jpg"
+                     alt="ZackMen个人博客的微信号">
+            </div>
+            <div class="link-container">
+                <a href="#" target="_blank" rel="nofollow">
+                    ←扫微信加我交流</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="tools">
+<a class="tools_top" title="返回顶部"></a>
+<a href="#" class="tools_comments" title="给我留言" target="_blank"
+rel="nofollow"></a>
+</div>
+    <script type="text/javascript" src="../blog/js/superfish.js"></script>
+</body>
+</html>
