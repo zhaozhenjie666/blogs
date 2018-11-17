@@ -1,0 +1,229 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-15 22:40:45
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-19 17:29:12
+*/
+@import url(base.css);
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1.32rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 999;
+}
+header .h-left{
+	width: 0.8rem;
+	height: 0.9rem;
+	/* background: yellow; */
+	line-height: 0.9rem;
+	padding-left: 0.05rem;
+}
+
+header .h-center{
+	position: relative;
+	width: 8rem;
+	height: 0.9rem;
+	/* background: yellow; */
+}
+header .h-center .search{
+	float: left;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	background: #f2f3f5;
+	border-radius: 0.9rem;
+	padding-left: 1.05rem;
+	color: #a0acb4;
+	font-size: 0.32rem;
+	border: none;
+}
+header .h-right{
+	width: 1.08rem;
+	height: 0.9rem;
+	/* background: yellow; */
+    /* line-height: 0.9rem; */
+    padding-bottom: 0.04rem;
+
+}
+header .h-right i{
+	float: right;
+	font-size: 0.9rem;
+}
+.h-icon{
+	font-family: 'iconfont';
+	font-size: 0.7rem;
+	color: #7a8993;
+	font-style: normal;
+	float: left;
+}
+.h-center-icon{
+	position: absolute;
+	font-family: 'iconfont';
+	font-size: 0.7rem;
+	color: #7a8993;
+	font-style: normal;
+}
+.icon-sousuo{
+	left: 0.2rem;
+	top: 0.1rem;
+	color: #b0bdc6;
+}
+.icon-saoyisao{
+	right: 0.3rem;
+	top: 0.08rem;
+	color: #b0bdc6;
+} 
+main{
+	width: 100%;
+	margin-top: 1.32rem;
+	background: #f2f2f2;
+}
+main .biaoti{
+    width: 100%;
+    height: 1.22rem;
+    background: white;
+    border-top: 0.01rem solid  #dcdcdc;
+    border-bottom: 0.01rem solid  #dcdcdc;
+    overflow: hidden;
+}
+.icon-xtubiao{
+	float: left;
+	font-family: 'iconfont';
+	font-style: normal;
+}
+main .biaoti .bt-left{
+	width: 9.62rem;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+}
+main .biaoti .bt-left a{
+	float: left;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.22rem;
+	font-size: 0.34rem;
+	color: #3c3c3c;
+	overflow: hidden;
+}
+main .biaoti .bt-left a .s1{
+	float: left;
+	margin-left: 0.4rem;
+     /* margin-top: 0.2rem */
+}
+main .biaoti .icon-shangxia{
+	float: left;
+	 margin-left: 0.1rem;
+     margin-top: 0.1rem
+     font-size: 0.30rem;
+     color: #969696;
+}
+main .biaoti .icon-caidan{
+	float: left;
+     font-size: 0.45rem;
+     color: #3c3c3c;
+     margin-left: 0.3rem;
+     margin-top: 0.3rem
+}
+main .product{
+	width: 100%;
+	height: 4.35rem;
+	background: white;
+	margin-top: 0.06rem;
+}
+main .product .prod-left{
+	float: left;
+	width: 3.28rem;
+	height: 100%;
+}
+main .product .prod-left img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+main .product .prod-right{
+	position: relative;
+	float: left;
+	height: 100%;
+	width: 68%;
+}
+main .product .prod-right .pro-ri1{
+	font-size: 0.38rem;
+	color: #333333;
+	margin-top: 0.4rem;
+}
+main .product .prod-right .pro-ri2{
+	font-size: 0.32rem;
+	color: #a7a7a7;
+}
+main .product .prod-right .pro-ri3{
+	margin-top: 0.4rem;
+	overflow: hidden;
+}
+main .product .prod-right .pro-ri3 .s1{
+	float: left;
+	font-size: 0.38rem;
+	font-weight: bold;
+	color: #ff5d54;
+}
+main .product .prod-right .pro-ri3 .s2{
+	float: left;
+	font-size: 0.26rem;
+	/* font-weight: bold; */
+	color: #a7a7a7;
+	text-decoration: line-through;
+	margin-left: 0.2rem;
+}
+main .product .prod-right .pro-ri3 .s3{
+	float: left;
+	font-size: 0.26rem;
+	/* font-weight: bold; */
+	color: #a7a7a7;
+	margin-left: 0.2rem;
+}
+main .product .prod-right .pro-ri4{
+    overflow: hidden;
+	margin-top: 0.2rem;
+}
+main .product .prod-right .pro-ri4 .s1{
+	float: left;
+	/* width: 1.1rem;
+	height: 0.36rem; */
+	padding: 0.05rem;
+	background: #ff5753;
+	font-size: 0.22rem;
+	color: white;
+	text-align: center;
+	line-height: 0.36rem;
+}
+main .product .prod-right .pro-ri4 .s2{
+	float: left;
+	/* width: 0.86rem;
+	height: 0.36rem; */
+	padding: 0.05rem;
+	background:  #ff5753;
+	font-size: 0.22rem;
+	color: white;
+	text-align: center;
+	line-height: 0.36rem;
+	margin-left: 0.2rem;
+}
+main .product .prod-right .pro-ri5{
+	font-size: 0.32rem;
+	color: #999999;
+	margin-top: 0.2rem;
+}
+.icon-icon1{
+	position: absolute;
+	bottom: 0.8rem;
+	right: 0.5rem;
+	font-size: 0.5rem;
+	color: #e54033;
+}

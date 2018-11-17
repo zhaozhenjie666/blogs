@@ -1,0 +1,932 @@
+/*.2rem
+* @Author: Administrator
+* @Date:   2017-10-11 21:17:36
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-18 23:33:54
+*/
+@import url(base.css);
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1.32rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 999;
+}
+header .h-left{
+	width: 0.8rem;
+	height: 0.9rem;
+	/* background: yellow; */
+	line-height: 0.9rem;
+	padding-left: 0.05rem;
+}
+
+header .h-center{
+	position: relative;
+	width: 8rem;
+	height: 0.9rem;
+	/* background: yellow; */
+}
+header .h-center .search{
+	float: left;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	background: #f2f3f5;
+	border-radius: 0.9rem;
+	padding-left: 1.05rem;
+	color: #a0acb4;
+	font-size: 0.32rem;
+	border: none;
+}
+header .h-right{
+	width: 1.08rem;
+	height: 0.9rem;
+	/* background: yellow; */
+    /* line-height: 0.9rem; */
+    padding-bottom: 0.04rem;
+
+}
+header .h-right i{
+	float: right;
+	font-size: 0.9rem;
+}
+.h-icon{
+	font-family: 'iconfont';
+	font-size: 0.7rem;
+	color: #7a8993;
+	font-style: normal;
+	float: left;
+}
+.h-center-icon{
+	position: absolute;
+	font-family: 'iconfont';
+	font-size: 0.7rem;
+	color: #7a8993;
+	font-style: normal;
+}
+.icon-sousuo{
+	left: 0.2rem;
+	top: 0.1rem;
+	color: #b0bdc6;
+}
+.icon-saoyisao{
+	right: 0.3rem;
+	top: 0.08rem;
+	color: #b0bdc6;
+} 
+
+/* banner开始编写 */
+.banner-gundong{
+	position: relative;
+	width: 100%;
+	height: 4.56rem;
+	/*background: green;*/
+	margin-top: 1.32rem;
+}
+.banner-gundong li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.banner-gundong img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.banner-fixed{
+    width: 100%;
+	height: 4.56rem;
+	/*background: green;*/
+}
+.banner-fixed img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/* 导航分类开始编写 */
+.daohang{
+  width: 100%;
+  overflow: hidden;
+}
+.daohang .one{
+	width: 100%;
+	height: 1.08rem;
+	padding-top: 0.34rem;
+}
+.daohang .one a{
+	float: left;
+	width: 20%;
+	height:0.4rem;
+	/* background: red; */
+	text-align: center;
+	line-height: 0.4rem;
+	color: black;
+	font-size: 0.36rem;
+	border-right: 1px solid #e8e8e8;
+}
+.daohang .one a:last-child{
+	border-right: none;
+}
+
+/* 主体代码开始编写 */
+main{
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 1.44rem;
+	background: #ebf0f6;
+}
+/* 促销开始编写 */
+main .cuxiao{
+	width: 100%;
+	height: 1.3rem;
+	margin-top: 0.04rem;
+	background: white;
+	
+}
+main .cuxiao .cx-icon{
+	float: left;
+	width: 3rem;
+	height: 1.3rem;
+	/*background: yellow;*/
+}
+main .cuxiao .cx-icon img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+main .cuxiao .cx-news{
+	float: left;
+	width: 5.35rem;
+	height: 1.3rem;
+
+	/* background: pink; */
+	position: relative;
+}
+main .cuxiao .cx-news li{
+	float: left;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+}
+main .cuxiao .cx-news li a{
+	padding-left: 0.3rem;
+	display: block;
+	height: 0.58rem;
+	width: 100%;
+	/* background: yellow; */
+	margin-top: 0.38rem;
+	border-left: 0.04rem solid #e6e3e4;
+}
+main .cuxiao .cx-news li a img{
+
+	float: left;
+	width: 1.11rem;
+	height: 0.45rem;
+}
+main .cuxiao .cx-news li a span{
+	float: left;
+	font-size: 0.38rem;
+	color: #3c3c3c;
+	line-height: 0.38rem;
+	margin-top: 0.034rem;
+	margin-left: 0.1rem;
+}
+
+
+main .cuxiao .cx-more{
+	float: right;
+	width: 1.8rem;
+	height: 1.3rem;
+	/* background: blue; */
+}
+main .cuxiao .cx-more a{
+	float: left;
+	color: #ff4636;
+	font-size: 0.32rem;
+	margin-top: 0.39rem;
+	margin-left: 0.74rem;
+}
+main .guanggao{
+	width: 100%;
+	height: 2.88rem;
+    margin-top: 0.24rem;
+}
+main .guanggao img{
+	display: block;
+	width: 100%;
+	height: 2.88rem;
+}
+.miaosha{
+	width: 100%;
+	height: 6.58rem;
+	margin-top: 0.24rem;
+	background: white;
+}
+.miaosha .ms-top{
+	width: 100%;
+	height: 1.2rem;
+	/* background: red; */
+	padding-top: 0.5rem;
+}
+.miaosha .ms-top .ms-top-center{
+	width: 4.4rem;
+	height: 100%;
+	margin: 0 auto;
+	/* background: yellow; */
+	font-size: 0.46rem;
+	position: relative;
+}
+.miaosha .ms-top .ms-top-center .theme{
+	float: left;
+	margin-left: 0.84rem;
+	margin-top: 0.04rem;
+	color: #fb2b46;
+}
+.miaosha .ms-top .ms-top-center .line1{
+	float: left;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #fb2b46;
+	margin-top: 0.35rem;
+}
+.miaosha .ms-top .ms-top-center .line2{
+	float: right;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #fb2b46;
+	margin-top: 0.35rem;
+}
+.icon-xiao {
+   font-family: 'iconfont';
+   font-size: 0.3rem;
+   font-style: normal;
+}
+.miaosha .ms-top .ms-top-center .xiao1{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: red;
+}
+.miaosha .ms-top .ms-top-center .xiao2{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: red;
+}
+.miaosha .ms-middle{
+	width: 100%;
+	height: 0.8rem;
+	background: white;
+}
+.miaosha .ms-middle .ms-middle-center{
+	width: 3.46rem;
+	height: 100%;
+	/* background: green; */
+	margin: 0 auto;
+	padding: 0.02rem;
+
+}
+.miaosha .ms-middle .ms-middle-center span{
+	float: left;
+	width: 0.57rem;
+	height: 0.76rem;
+	background: black;
+	border-radius: 0.05rem;
+	text-align: center;
+	font-size: 0.32rem;
+	line-height: 0.76rem;
+	color: white;
+}
+.miaosha .ms-middle .ms-middle-center span:nth-child(2n){
+	background: white;
+
+	color: black;
+}
+.miaosha .ms-middle .ms-middle-center span:nth-last-child(2){
+	background: red;
+}
+.miaosha .ms-bottom{
+	width: 100%;
+	height: 4.18rem;
+	/* background: red; */
+	margin-top: 0.32rem;
+	overflow: hidden;
+}
+.miaosha .ms-bottom a{
+	float: left;
+	width: 3.2rem;
+	height: 100%;
+	/* background: green; */
+}
+.miaosha .ms-bottom a img{
+	float: left;
+	width: 3.2rem;
+	height: 3.36rem;
+}
+.miaosha .ms-bottom a span{
+	float: left;
+	font-size: 0.32rem;
+	width: 100%;
+	text-align: center;
+	margin-top: 0.15rem;
+	color: red;
+}
+
+/* 尾品汇开始 */
+.weipin{
+	width: 100%;
+	/* height: 6.58rem; */
+	margin-top: 0.24rem;
+	background: white;
+	overflow: hidden;
+}
+.weipin .wp-top{
+	width: 100%;
+	height: 1.2rem;
+	/* background: red; */
+	padding-top: 0.5rem;
+}
+.weipin .wp-top .wp-top-center{
+	width: 4.4rem;
+	height: 100%;
+	margin: 0 auto;
+	/* background: yellow; */
+	font-size: 0.46rem;
+	position: relative;
+}
+.weipin .wp-top .wp-top-center .theme{
+	float: left;
+	margin-left: 1.1rem;
+	margin-top: 0.04rem;
+	color: #b150bc;
+}
+.weipin .wp-top .wp-top-center .line1{
+	float: left;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #b150bc;
+	margin-top: 0.35rem;
+}
+.weipin .wp-top .wp-top-center .line2{
+	float: right;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #b150bc;
+	margin-top: 0.35rem;
+}
+.icon-xiao {
+   font-family: 'iconfont';
+   font-size: 0.3rem;
+   font-style: normal;
+}
+.weipin .wp-top .wp-top-center .xiao1{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #b150bc;
+}
+.weipin .wp-top .wp-top-center .xiao2{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #b150bc;
+}
+.weipin  .wp-center{
+	width: 100%;
+	height: 1.1rem;
+	/* background: red; */
+	font-size: 0.32rem;
+	color: black;
+	text-align: center;
+	line-height: 1.1rem;
+}
+.weipin .wp-bottom{
+	width: 100%;
+	/* height: 8rem; */
+	overflow: hidden;
+} 
+.weipin .wp-bottom .wp-guanggao{
+	width: 100%;
+	height: 4.51rem;
+}
+.weipin .wp-bottom .wp-guanggao img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.weipin .wp-bottom .wp-prod{
+	width: 100%;
+	height: 4.52rem;
+	/* background: yellow; */
+} 
+.weipin .wp-bottom .wp-prod a{
+	float: left;
+	width: calc(100% / 3);
+	height: 100%;
+	/* background: red; */
+	border-right: 0.01rem solid #ebf0f6;
+	border-bottom: 0.01rem solid #ebf0f6;
+}
+.weipin .wp-bottom .wp-prod a .top{
+	float: left;
+	width: 100%;
+	font-size: 0.38rem;
+	color: black;
+	text-align: center;
+	line-height: 0.38rem; 
+	margin-top: 0.5rem;
+}
+.weipin .wp-bottom .wp-prod a .bottom{
+	float: left;
+	width: 100%;
+	font-size: 0.32rem;
+	text-align: center;
+	line-height: 0.32rem;
+	color: #9b39e2; 
+	margin-top: 0.2rem;
+}
+.weipin .wp-bottom .wp-prod a img{
+	float: left;
+	width: 3rem;
+	height: 2.7rem;
+	margin-top: 0.3rem;
+	margin-left: 0.33rem;
+}
+
+
+
+/* fuzhuangxiebao开始编写*/
+.fzxb{
+	width: 100%;
+	/* height: 6.58rem; */
+	margin-top: 0.24rem;
+	background: white;
+	overflow: hidden;
+}
+.fzxb .fz-top{
+	width: 100%;
+	height: 1.2rem;
+	/* background: red; */
+	padding-top: 0.5rem;
+}
+.fzxb .fz-top .fz-top-center{
+	width: 4.4rem;
+	height: 100%;
+	margin: 0 auto;
+	/* background: yellow; */
+	font-size: 0.46rem;
+	position: relative;
+}
+.fzxb .fz-top .fz-top-center .theme{
+	float: left;
+	margin-left: 0.85rem;
+	margin-top: 0.04rem;
+	color: #cb3789;
+}
+.fzxb .fz-top .fz-top-center .line1{
+	float: left;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #cb3789;
+	margin-top: 0.35rem;
+}
+.fzxb .fz-top .fz-top-center .line2{
+	float: right;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #cb3789;
+	margin-top: 0.35rem;
+}
+.icon-xiao {
+   font-family: 'iconfont';
+   font-size: 0.3rem;
+   font-style: normal;
+}
+.fzxb .fz-top .fz-top-center .xiao1{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #cb3789;
+}
+.fzxb .fz-top .fz-top-center .xiao2{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #cb3789;
+}
+.fzxb  .fz-center{
+	width: 100%;
+	height: 1.1rem;
+	/* background: red; */
+	font-size: 0.32rem;
+	color: black;
+	text-align: center;
+	line-height: 1.1rem;
+}
+.fzxb .fz-bottom{
+	width: 100%;
+	/* height: 8rem; */
+	overflow: hidden;
+} 
+.fzxb .fz-bottom .fz-guanggao{
+	width: 100%;
+	height: 2.86rem;
+}
+.fzxb .fz-bottom .fz-guanggao img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.fzxb .fz-bottom .fz-prod{
+	width: 100%;
+	height: 4.5rem;
+	/* background: yellow; */
+} 
+.fzxb .fz-bottom .fz-prod a{
+	float: left;
+	width: calc(100% / 3);
+	height: 100%;
+	/* background: red; */
+	border-right: 0.01rem solid #ebf0f6;
+	border-bottom: 0.01rem solid #ebf0f6;
+}
+
+.fzxb .fz-bottom .fz-prod a img{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+
+/*爱生活开始编写*/
+.aishenghuo{
+	width: 100%;
+	/* height: 6.58rem; */
+	margin-top: 0.24rem;
+	background: white;
+	overflow: hidden;
+}
+.aishenghuo .fz-top{
+	width: 100%;
+	height: 1.2rem;
+	/* background: red; */
+	padding-top: 0.25rem;
+}
+.aishenghuo .fz-top .fz-top-center{
+	width: 4.4rem;
+	height: 100%;
+	margin: 0 auto;
+	/* background: yellow; */
+	font-size: 0.46rem;
+	position: relative;
+}
+.aishenghuo .fz-top .fz-top-center .theme{
+	float: left;
+	margin-left: 1.05rem;
+	margin-top: 0.04rem;
+	color: #60c2dd;
+}
+.aishenghuo .fz-top .fz-top-center .line1{
+	float: left;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #60c2dd;
+	margin-top: 0.35rem;
+}
+.aishenghuo .fz-top .fz-top-center .line2{
+	float: right;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #60c2dd;
+	margin-top: 0.35rem;
+}
+.icon-xiao {
+   font-family: 'iconfont';
+   font-size: 0.3rem;
+   font-style: normal;
+}
+.aishenghuo .fz-top .fz-top-center .xiao1{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #60c2dd;
+}
+.aishenghuo .fz-top .fz-top-center .xiao2{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #60c2dd;
+}
+.aishenghuo .fz-center{
+	width: 100%;
+	height: 2.88rem;
+	/*background: red;*/
+}
+.aishenghuo .fz-center img{
+	width: 100%;
+	height: 100%;
+}
+.aishenghuo .fz-main1{
+	width: 100%;
+	height: 4.9rem;
+	/*background: yellow;*/
+}
+.aishenghuo .fz-main1 .left{
+	float: left;
+	width: 50%;
+	height: 100%;
+	/*background: orchid;*/
+	border-right: 0.01rem solid #ebf0f6;
+    border-bottom: 0.01rem solid  #ebf0f6;
+}
+.aishenghuo .fz-main1 .left img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.aishenghuo .fz-main1 .right{
+	float: left;
+	width: 50%;
+	height: 4.9rem;
+	/*background: white;*/
+}
+.aishenghuo .fz-main1 .right a{
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+.aishenghuo .fz-main1 .right a:last-child{
+	border-top: 0.01rem solid  #ebf0f6;
+	border-bottom: 0.01rem solid  #ebf0f6;
+}
+.aishenghuo .fz-main1 .right img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.aishenghuo .fz-main2{
+	width: 100%;
+	height: 2.45rem;
+	/*background: red;*/
+}
+.aishenghuo .fz-main2 a{
+	float: left;
+	width: 50%;
+	height: 100%;
+	border-right: 0.01rem solid  #ebf0f6;
+}
+.aishenghuo .fz-main2 a:last-child{
+	border-right: none;
+}
+.aishenghuo .fz-main2 img{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.aishenghuo .fz-main3{
+	width: 100%;
+	height: 3.65rem;
+	/*background: yellow;*/
+}
+.aishenghuo .fz-main3 a{
+	float: left;
+	width: 25%;
+	height: 100%;
+	border-right:  0.01rem solid  #ebf0f6;
+	border-top: 0.01rem solid  #ebf0f6;
+}
+.aishenghuo .fz-main3 a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*咚咚优选开始编写*/
+.ddyouxuan{
+	width: 100%;
+	/* height: 6.58rem; */
+	margin-top: 0.24rem;
+	background: white;
+	overflow: hidden;
+}
+.ddyouxuan .fz-top{
+	width: 100%;
+	height: 1.2rem;
+	/* background: red; */
+	padding-top: 0.25rem;
+}
+.ddyouxuan .fz-top .fz-top-center{
+	width: 4.4rem;
+	height: 100%;
+	margin: 0 auto;
+	/* background: yellow; */
+	font-size: 0.46rem;
+	position: relative;
+}
+.ddyouxuan .fz-top .fz-top-center .theme{
+	float: left;
+	margin-left: 0.86rem;
+	margin-top: 0.04rem;
+	color: #90563f;
+}
+.ddyouxuan .fz-top .fz-top-center .line1{
+	float: left;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #90563f;
+	margin-top: 0.35rem;
+}
+.ddyouxuan .fz-top .fz-top-center .line2{
+	float: right;
+	width: 0.42rem;
+	height: 0.04rem;
+	background: #90563f;
+	margin-top: 0.35rem;
+}
+.icon-xiao {
+   font-family: 'iconfont';
+   font-size: 0.3rem;
+   font-style: normal;
+}
+.ddyouxuan .fz-top .fz-top-center .xiao1{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #90563f;
+}
+.ddyouxuan .fz-top .fz-top-center .xiao2{
+	display: block;
+	position: absolute;
+	top: 0.2rem;
+	right: 0.6rem;
+	width: 0.5rem;
+	height: 0.3rem;
+	color: #90563f;
+}
+.ddyouxuan .fz-center{
+	width: 100%;
+	height: 2.88rem;
+	/*background: red;*/
+}
+.ddyouxuan .fz-center img{
+	width: 100%;
+	height: 100%;
+}
+.ddyouxuan .fz-main1{
+	width: 100%;
+	height: 4.9rem;
+	/*background: yellow;*/
+}
+.ddyouxuan .fz-main1 .left{
+	float: left;
+	width: 50%;
+	height: 100%;
+	/*background: orchid;*/
+	border-right: 0.01rem solid #ebf0f6;
+    border-bottom: 0.01rem solid  #ebf0f6;
+}
+.ddyouxuan .fz-main1 .left img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.ddyouxuan .fz-main1 .right{
+	float: left;
+	width: 50%;
+	height: 4.9rem;
+	/*background: white;*/
+}
+.ddyouxuan .fz-main1 .right a{
+	display: block;
+	width: 100%;
+	height: 50%;
+}
+.ddyouxuan .fz-main1 .right a:last-child{
+	border-top: 0.01rem solid  #ebf0f6;
+	border-bottom: 0.01rem solid  #ebf0f6;
+}
+.ddyouxuan .fz-main1 .right img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.ddyouxuan .fz-main2{
+	width: 100%;
+	height: 2.45rem;
+	/*background: red;*/
+}
+.ddyouxuan .fz-main2 a{
+	float: left;
+	width: 50%;
+	height: 100%;
+	border-right: 0.01rem solid  #ebf0f6;
+}
+.ddyouxuan .fz-main2 a:last-child{
+	border-right: none;
+}
+.ddyouxuan .fz-main2 img{
+	float: left;
+	width: 100%;
+	height: 100%;
+}
+.ddyouxuan .fz-main3{
+	width: 100%;
+	height: 3.65rem;
+	/*background: yellow;*/
+}
+.ddyouxuan .fz-main3 a{
+	float: left;
+	width: 25%;
+	height: 100%;
+	border-right:  0.01rem solid  #ebf0f6;
+	border-top: 0.01rem solid  #ebf0f6;
+}
+.ddyouxuan .fz-main3 a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+footer{
+    /* display: none; */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1.44rem;
+	border-top: 0.01rem solid #c8c8c8;
+	background: #f9f9f9;
+}
+.icon-footer{
+	font-family: 'iconfont';
+	font-style: normal;
+	font-size: 0.62rem;
+	color: #5d5f6a;
+}
+footer .fo{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+footer .fo i{
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.15rem;
+	width: 0.62rem;
+	height: 0.62rem;
+}
+footer .fo span{
+	display: block;
+	font-size: 0.28rem;
+	color: #5d5f6a;
+	margin: 0 auto;
+	margin-top: 0.08rem;
+	text-align: center;
+}
+footer .fo:nth-child(1) i{
+	color: orange;
+}
+footer .fo:nth-child(1) span{
+	color: orange;
+}
+
+

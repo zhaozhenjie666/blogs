@@ -1,0 +1,593 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-15 15:02:43
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-19 17:17:19
+*/
+@import url(base.css);
+header{
+	width: 100%;
+	height: 1.44rem;
+	background: white;
+	border-bottom: 0.002rem solid #d7d3d3;
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+header .h-center{
+	float: left;
+	height: 100%;
+	width: 5.4rem;
+	/* background: red; */
+	margin-left: 1.55rem;
+}
+header .h-center a{
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	line-height: 1.44rem;
+	font-size: 0.42rem;
+	color: #646464;
+}
+header .h-center a:first-child{
+	color: #ff8262;
+	border-bottom: 0.01rem solid #ff8262;
+}
+
+.icon-xtubiao{
+	float: left;
+	font-family: 'iconfont';
+	font-style: normal;
+}
+.icon-fanhui{
+	float: left;
+	font-size: 0.64rem;
+	color: #454545;
+	margin-top: 0.35rem;
+	margin-left: 0.44rem;
+}
+.icon-13{
+	float: right;
+	font-size: 0.64rem;
+	color: #454545;
+	margin-top: 0.4rem;
+	margin-right: 0.44rem;
+}
+.icon-gengduo{
+	float: right;
+	font-size: 0.7rem;
+	color: #454545;
+	margin-top: 0.35rem;
+	margin-right: 0.44rem;
+}
+
+main{
+	width: 100%;
+	overflow: hidden;
+	background: #eeeeee;
+	margin-bottom: 1.64rem;
+	margin-top: 1.44rem;
+}
+/* 主内容开始编写 */
+main .product{
+	width: 100%;
+	padding-bottom: 0.15rem ;
+	background: white;
+	overflow: hidden;
+}
+main .product .prod-top{
+	width: 100%;
+	height: 7rem;
+	display: block;
+}
+main .product .prod-top img{
+	display: block;
+	width: 5.28rem;
+	height: 6.29rem;
+	margin-left: 2.8rem;
+	margin-top: 0.2rem;
+}
+main .product .prod-down{
+	width: 100%;
+	padding-left: 0.32rem;
+}
+main .product .prod-down .one{
+	display: block;
+	font-size: 0.46rem;
+	color: #3c3c3c;
+}
+main .product .prod-down .two{
+	margin-top: 0.3rem;
+	overflow: hidden;
+}
+main .product .prod-down .two .s1{
+	float: left;
+	font-size: 0.46rem;
+	color: red;
+}
+main .product .prod-down .two .s2{
+	float: left;
+	font-size: 0.38rem;
+	color: #969696;
+	margin-top: 0.05rem;
+	margin-left: 0.3rem;
+}
+main .product .prod-down .three{
+	margin-top: 0.3rem;
+	overflow: hidden;
+}
+main .product .prod-down .three .s1{
+	float: left;
+	font-size: 0.34rem;
+	color: #969696;
+}
+main .product .prod-down .three .s2{
+	float: left;
+	text-decoration: line-through;
+	font-size: 0.34rem;
+	color: #969696;
+	margin-top: 0.05rem;
+	margin-left: 0.2rem;
+}
+main .product .prod-down .four{
+	margin-top: 0.2rem;
+	overflow: hidden;
+}
+main .product .prod-down .four .s1{
+	float: left;
+	/* width: 1.44rem; */
+	/* height: 0.47rem; */
+	background: #f2303c;
+	color: white;
+	text-align: center;
+	line-height: 0.47rem;
+	font-size: 0.28rem;
+	border-radius: 0.02rem;
+	padding: 0.03rem;
+}
+/* 评分开始编写 */
+main .pinfen{
+	width: 100%;
+	height: 1.63rem;
+	background: white;
+	margin-top: 0.15rem;
+}
+main .pinfen .pf-left{
+	display: block;
+	width: 4.68rem;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+.icon-wujiaoxing{
+	float: left;
+	font-size: 0.38rem;
+	color: #ff8161;
+}
+main .pinfen .pf-left .pf-le-to{
+   overflow: hidden;
+   margin-top: 0.3rem;
+   margin-left: 0.3rem;
+}
+main .pinfen .pf-left .pf-le-to span{
+	float: left;
+	font-size: 0.38rem;
+	color: #ff8161;
+	margin-left: 0.2rem;
+	line-height: 0.4rem;
+
+}
+main .pinfen .pf-left .pf-le-dow{
+     font-size: 0.28rem;
+     color: #969696;
+     margin-top: 0.2rem;
+     margin-left: 0.3rem;
+}
+main .pinfen .pf-right{
+	float: right;
+	overflow: hidden;
+}
+main .pinfen .pf-right span{
+	float: left;
+	width: 2.27rem;
+	height: 0.73rem;
+	font-size: 0.38rem;
+	color: #ff8161;
+	border: 0.03rem solid #ff8161;
+	text-align: center;
+	margin-right: 0.5rem;
+	margin-top: 0.45rem;
+	background: #fff2ef;
+	border-radius: 0.1rem;
+	line-height: 0.6rem;
+}
+main .jiajiagou{
+	display: block;
+	width: 100%;
+	height: 1.5rem;
+	margin-top: 0.15rem;
+	background: white;
+	overflow: hidden;
+}
+main .jiajiagou .jjg-left{
+	float: left;
+	overflow: hidden;
+}
+main .jiajiagou .jjg-left span{
+	float: left;
+	width: 1.14rem;
+	height: 0.47rem;
+	border: 0.01rem solid #ff8161;
+	border-radius: 0.05rem;
+	margin-left: 0.35rem;
+	margin-top: 0.5rem;
+	font-size: 0.26rem;
+	color: #ff8161;
+	margin-right: 0.5rem;
+	text-align: center;
+}
+main .jiajiagou .jjg-center{
+	float: left;
+	height: 100%;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #3c3c3c;
+}
+main .jiajiagou i{
+	float: right;
+	font-size: 0.36rem;
+	color: #9f9f9f;
+	margin-right: 0.4rem;
+	margin-top: 0.55rem;
+}
+/* 商品信息开始编写 */
+main .information{
+	width: 100%;
+	margin-top: 0.15rem;
+}
+main .information .author{
+	display: block;
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+    background: white;
+    border-bottom: 0.01rem solid #eeeeee;
+}
+main .information .author .one{
+	float: left;
+	height: 100%;
+	width: 1.9rem;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #969696;
+}
+main .information .author .two{
+	float: left;
+	height: 100%;
+	/* width: 1.9rem; */
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #3c3c3c;
+}
+main .information .author .three{
+	float: right;
+	height: 100%;
+	width: 1.72rem;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #969696;
+}
+main .information .author i{
+	float: right;
+	font-size: 0.38rem;
+	color: #969696;
+	margin-right: 0.4rem;
+	margin-top: 0.55rem;
+}
+
+
+
+/*  地址*/
+main .information .address{
+	display: block;
+    width: 100%;
+    height: 2.64rem;
+    overflow: hidden;
+    background: white;
+    border-bottom: 0.01rem solid #eeeeee;
+    margin-top: 0.16rem;
+    padding:0.55rem 0.38rem 0 0.58rem;
+
+}
+main .information .address .one{
+	float: left;
+	height: 100%;
+	width: 1.36rem;
+	/* text-align: center; */
+	/* line-height: 1.5rem; */
+	font-size: 0.38rem;
+	color: #969696;
+}
+main .information .address .two{
+	float: left;
+	height: 100%;
+	/* width: 1.9rem; */
+	/* text-align: center; */
+	/* line-height: 1.5rem; */
+	font-size: 0.38rem;
+	color: #3c3c3c;
+}
+main .information .address .two p{
+	font-size: 0.38rem;
+	color: #3c3c3c;
+}
+main .information .address .two .p2{
+	color: #ff8161;
+}
+
+main .information .address i{
+	float: right;
+	font-size: 0.38rem;
+	color: #969696;
+	/* margin-right: 0.4rem; */
+	margin-top: 0.55rem;
+
+} 
+
+/* 卖家 */
+main .information .sealer{
+	display: block;
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+    background: white;
+    border-bottom: 0.01rem solid #eeeeee;
+    padding-left: 0.35rem;
+}
+main .information .sealer .one{
+	float: left;
+	height: 100%;
+	width: 1.9rem;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #969696;
+}
+main .information .sealer .two{
+	float: left;
+	height: 100%;
+	/* width: 1.9rem; */
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #3c3c3c;
+}
+
+main .information .sealer i{
+	float: right;
+	font-size: 0.38rem;
+	color: #969696;
+	margin-right: 0.4rem;
+	margin-top: 0.55rem;
+
+}
+/* 评论开始编写 */
+main .pinglun{
+	width: 100%;
+	margin-top: 0.15rem;
+}
+main .pinglun .pl{
+	display: block;
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+    background: white;
+    /* border-bottom: 0.01rem solid #eeeeee; */
+    padding-left: 0.5rem;
+}
+main .pinglun .pl .one{
+	float: left;
+	height: 100%;
+	width: 1.9rem;
+	/* text-align: center; */
+	line-height: 1.5rem;
+	font-size: 0.4rem;
+	color: #3c3c3c;
+}
+main .pinglun .pl .two{
+	float: left;
+	height: 100%;
+	/* width: 1.9rem; */
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #3c3c3c;
+}
+main .pinglun .pl .three{
+	float: right;
+	height: 100%;
+	text-align: center;
+	line-height: 1.5rem;
+	font-size: 0.38rem;
+	color: #ff8161;
+}
+main .pinglun .pl i{
+	float: right;
+	font-size: 0.38rem;
+	color: #969696;
+	margin-right: 0.4rem;
+	margin-top: 0.55rem;
+}
+main .pinglun .lable{
+	width: 100%;
+	background: white;
+	overflow: hidden;
+
+}
+main .pinglun .lable a{
+	float: left;
+	height: 0.9rem;
+	border: 0.01rem solid #ff8161;
+	border-radius: 0.45rem;
+	font-size: 0.36rem;
+	color: #ff8161;
+	padding: 0 0.2rem;
+	line-height: 0.75rem;
+	margin:  0.26rem ;
+    background: white;
+}
+main .pinglun .lable a:nth-last-child(2){
+	color: #969696;
+	border: 0.01rem solid #969696;
+}
+main .comment{
+	width: 100%;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	background: white;
+}
+main .comment .co-top{
+	width: 100%;
+	overflow: hidden;
+}
+main .comment .co-top img{
+	float: left;
+	width: 1.26rem;
+	height: 1.35rem;
+}
+main .comment .co-top .right{
+	float: left;
+}
+main .comment .co-top .right .p1{
+	font-size: 0.34rem;
+	color: #969696;
+	margin-bottom: 0.2rem;
+}
+main .comment .co-top .right i{
+	color: #ff8161;
+}
+main .comment .co-center{
+	font-size: 0.36rem;
+	color: #3c3c3c;
+	width: 100%;
+	height: 1.6rem;
+	overflow: hidden;
+	line-height: 0.56rem;
+}
+
+
+main .comment .co-down{
+	width: 100%;
+	height: 1rem;
+	padding-top: 0.28rem;
+}
+main .comment .co-down i{
+	float: right;
+	font-size: 0.48rem;
+	color: #a3a3a3;
+	margin-left: 0.5rem
+}
+main .comment .co-down span{
+	float: right;
+	font-size: 0.32rem;
+	color: #a3a3a3;
+}
+main .more{
+	width: 100%;
+	background: white;
+	height: 2.14rem;
+	padding-top: 0.54rem;
+}
+main .more a{
+	display: block;
+	width: 3.3rem;
+	height: 1rem;
+	border: 0.01rem solid #ff8161;
+	color: #ff8161;
+	font-size: 0.34rem;
+	line-height: 1rem;
+	text-align: center;
+	margin:  0 auto;
+	border-radius: 0.5rem;
+
+}
+
+
+
+footer{
+	/* display: none; */
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.64rem;
+	overflow: hidden;
+}
+footer .f-left{
+	float: left;
+	width: 3.89rem;
+	height: 100%;
+	background: white;
+}
+footer .f-left a{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+footer .f-left .left i{
+	float: left;
+	font-size: 0.56rem;
+	color: #5e5e5e;
+	margin-left: 0.7rem;
+	margin-top: 0.2rem;
+}
+footer .f-left .left p{
+	float: left;
+	font-size: 0.32rem;
+	color: #5e5e5e;
+	width: 100%;
+	text-align: center;
+	margin-top: 0.15rem;
+}
+footer .f-left .right i{
+	float: left;
+	font-size: 0.56rem;
+	color: #5e5e5e;
+	margin-left: 0.7rem;
+	margin-top: 0.2rem;
+}
+footer .f-left .right p{
+	float: left;
+	font-size: 0.32rem;
+	color: #5e5e5e;
+	width: 100%;
+	text-align: center;
+	margin-top: 0.15rem;
+}
+
+
+footer .f-center{
+	float: left;
+	width: 3.45rem;
+	height: 100%;
+	background: #fab45a;
+	font-size: 0.42rem;
+	color: white;
+	text-align: center;
+	line-height: 1.64rem;
+}
+footer .f-right{
+	float: left;
+	width: 3.45rem;
+	height: 100%;
+	background: #fd746f;
+	font-size: 0.42rem;
+	color: white;
+	text-align: center;
+	line-height: 1.64rem;
+}
+

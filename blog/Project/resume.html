@@ -1,0 +1,439 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/cll.css">
+    <link rel="stylesheet" href="css/hover.css">
+</head>
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default resume">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="menu">
+                <li data-menuanchor="page1" class="active">
+                    <a href="#page1">首页</a>
+                </li>
+                <li data-menuanchor="page2" >
+                    <a href="#page2">自我介绍</a>
+                </li>
+                <li data-menuanchor="page3">
+                    <a href="#page3">技能介绍</a>
+                </li>
+                <li data-menuanchor="page4">
+                    <a href="#page4">项目演示</a>
+                </li>
+                <li data-menuanchor="page5">
+                    <a href="#page5">联系我</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="pure">
+</div>
+<div id="resume">
+    <!-- 遮罩开始 -->
+    <div class="section item-1">
+    <div class="tx">
+            <img src="images/tx.JPG" alt="">
+            <div class="kuang">
+        </div>
+    </div>
+        <div class="xiansi">
+            欢迎来到我的个人主页<br>
+            你好！我是一名前端工程师
+            </div>
+        <div class="xiansi-info">
+            <span>x</span>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script>
+            $(".tx").on('click', function() {
+            $(".xiansi").show();
+            });
+            $(".xiansi-info span").on("click", function(){
+                $(".xiansi").hide();
+            })
+        </script>
+
+        <div id="window">
+            <div id="show-board"></div>
+        </div>
+        <script src="../project/js/printer.js"></script>
+        <script>
+            var str =' Hello everyone！\n';
+            str +='I am a passionate web designer.\n';
+            str+='My name is zhaozhenjie.\n';
+            str+='I want to show you something about my skill and project.\n';
+            Printer.init(str, {
+                selector: 'show-board',
+                lnStr: ' '
+            }).print();
+        </script>
+
+
+    </div>
+    <!-- 第一屏开始 -->
+    <div class="section item-2">
+        <div class="wrap">
+ 
+  <div class="tile">
+    <div class="text">
+      <h1>基本信息</h1>
+      <img src="images/21.jpg">
+      <h2 class="animate-text">I'm a passionate web designer. </h2>
+      <p class="animate-text">Hello everyone,my name is zhaozhenjie.I want to show you something about my characters and hobbys. </p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+  
+  <div class="tile">
+    <div class="text">
+      <h1>兴趣爱好</h1>
+      <img src="images/22.jpg">
+      <h2 class="animate-text">足球·慢跑·健身</h2>
+      <p class="animate-text">I have many hobbies, such as playing football, jogging,  keeping fit and doing exercise. I think hobbies can make my life colorful. </p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+  
+  <div class="tile">
+    <div class="text">
+      <h1>专业技能</h1>
+      <img src="images/23.jpg">
+      <h2 class="animate-text">HTML5、CSS3、移动基础、响应式、bootstrap、less、vue等技术</h2>
+      <p class="animate-text"> My field of work is web development.I think that's why I'm always interested in the Internet. I have strong self-learning ability And I like to study various new frameworks</p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+  
+  <div class="tile">
+    <div class="text">
+      <h1>自我评价</h1>
+      <img src="images/24.jpg">
+      <h2 class="animate-text"> 易和人相处，拥有良好的亲和力。</h2>
+      <p class="animate-text">Responsible, work, optimistic, optimistic, positive.I like js, I love programming, and I love studying new technologies.</p>
+      <div class="dots"> <span></span> <span></span> <span></span> </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+     
+
+    <!-- 第二屏开始 -->
+    <div class="section item-3">
+        <div class="container">
+            <div class="img-3 hidden-xs"> 
+            </div>
+            <div class="bg-img hidden-xs hidden-sm">
+            </div>
+            <div class="sm-img fly hidden-xs hidden-sm">
+            </div>
+
+
+            <div class="skill-introduce">
+                <div class="media">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="./images/dian.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">PC端</h4>
+                        <p>
+                            熟练使用 Html5 Css3 JavaScript，能够完成移动端页面的编写和维护，<br>
+                            能处理主流浏览器兼容问题。
+                            熟练使用原生js, 了解js面向对象原理，闭包以及原型结构，能够合理利用面向对象以及模块化开发,并且能适当完成框架封装。熟练使用 jQuery，并能完成相关项目。
+                            <br>熟悉easing fullpage 插件的应用,轮播图，选项卡，按需加载，全屏滚动等常用功能的实现
+                            <br>掌握 Ajax交互原理，根据后台接口能够合理完成前后台交互，数据的增删改查。
+                        </p>
+
+                    </div>
+                </div>
+                <div class="media ">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="./images/shou.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">移动端</h4>
+                        <p>掌握移动端编程，会基于流式布局以及 响应式布局 开发基于移动端的页面。
+                        </p>
+
+                    </div>
+                </div>
+                <div class="media ">
+                    <div class="media-left media-top">
+                        <a href="#" class=''>
+                            <img class="media-object" src="./images/qi.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">其他</h4>
+                        <p>掌握了解Java，C#等编程语言,熟悉各种编程语言；熟悉W3C标准，对表现与数据分离、Web语义化等有深刻理解。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills ">
+                <span class="subject-9">H5+Css3</span>
+                <span class="subject-2">JavaScript</span>
+                <span class="subject-3">MySQL</span>
+                <span class="subject-4">jQuery</span>
+                <span class="subject-10">Php</span>
+                <span class="subject-5">移动端</span>
+                <span class="subject-6">Vue</span>
+                <span class="subject-7">响应式</span>
+                <span class="subject-8">Node.js</span>
+                <span class="subject-1">Less</span>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="section item-5">
+        <div class="slide hidden-xs">
+            <div class="container" id='container-img'>
+                <div class="row">
+                    <div class="portfolio-items">
+                        <div class="col-sm-6 col-md-3 col-lg-3 web">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='http://zhao1234.duapp.com/blog/index/index.php' target='_blank' >响应式博客系统开发</a></h4>
+                                        <small>技术：Bootstrap+Php+Swiper</small>
+                                        <i class="fa fa-search"></i></div>
+                                    <img src="images/8127.jpg" class="img-responsive" alt="响应式博客系统开发">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="project/shop/index.html" target='_blank' >惠万家 APP</a></h4>
+                                        <small>技术：MVc+Php</small>
+                                    </div>
+                                    <img src="images/8128.jpg" class="img-responsive" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="http://c321824react.duapp.com/" target='_blank' title="">题库系统</a></h4>
+                                        <small>技术：node.js</small>
+                                    </div>
+                                    <img src="images/8129.jpg" class="img-responsive" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='project/wu liu/index.html' target='_blank' title="">物流后台管理系统</a></h4>
+                                        <small>技术：phpcms+html+css</small>
+                                    </div>
+                                    <img src="images/8130.jpg" class="img-responsive" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='project/writing/images/index.html' target='_blank' title="">打字游戏</a></h4>
+                                        <small>技术：纯js 面向过程</small>
+                                    </div>
+                                    <img src="images/05.jpg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="project/youxi/wuziqiyouxi.html" target='_blank' title="">五子棋游戏</a></h4>
+                                        <small>技术：纯js面向过程</small>
+                                    </div>
+                                    <img src="images/06.jpg" class="img-responsive" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href="project/todoList/index.html" target='_blank' title="">备忘录app</a></h4>
+                                        <small>技术：Swiper+ Local Storage</small>
+                                    </div>
+                                    <img src="images/07.jpg" class="img-responsive" alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="portfolio-item">
+
+                                <div class="hover-bg">
+                                    <div class="hover-text">
+                                        <h4><a href='project/weather/index.html' target='_blank' title="">天气app</a></h4>
+                                        <small>技术：ajax</small>
+                                    </div>
+                                    <img src="images/08.jpg" class="img-responsive" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="rotator">
+                <div id="rot1">
+                    <img src="" width="800" height="300" class="bg" alt=""/>
+                    <div class="heading">
+                        <h1></h1>
+                    </div>
+                    <div class="description">
+                        <p></p>
+                    </div>
+                </div>
+                <ul id="rotmenu">
+                    <li>
+                        <a href="#">iphone</a>
+                        <div style="display:none;">
+                            <div class="info_image">1023.jpg</div>
+                            <div class="info_heading">个人兴趣</div>
+                            <div class="info_description">
+                                响应式页面布局，提高用户体验
+                                <br><a href="" target= _blank class="more">play</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">电商</a>
+                        <div style="display:none;">
+                            <div class="info_image">1025.jpg</div>
+                            <div class="info_image">Add to cart</div>
+                            <div class="info_description">
+                                pc端页面切图，电商的添加到购物车模型，符合大部分电商场景
+                                <br><a href="" target= _blank class="more">touch</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">shop</a>
+                        <div style="display:none;">
+                            <div class="info_image">1026.jpg</div>
+                            <div class="info_description">
+                               移动端页面切图，swiper使用，提高兼容性
+                               <br><a href="" target= _blank class="more">click</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">物流</a>
+                        <div style="display:none;">
+                            <div class="info_image">1027.jpg</div>
+                            <div class="info_description">
+                                 pc端页面切图，可以实现按需加载
+                                 <br><a href="" target= _blank class="more">touch</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">企宣</a>
+                        <div style="display:none;">
+                            <div class="info_image">1028.jpg</div>
+                            <div class="info_description">
+                                 pc端页面切图，可以实现全景加载
+                                 <br><a href="" target= _blank class="more">play</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="section item-6">
+
+                <form class="cd-form floating-labels">
+            <fieldset>
+                <div class="error-message">
+                    <p>请给我发送电子邮件</p>
+                </div>
+
+                <div class="icon">
+                    <label class="cd-label" for="cd-name">Name</label>
+                    <input class="user" type="text" name="cd-name" id="cd-name" required>
+                </div> 
+
+                <div class="icon">
+                    <label class="cd-label" for="cd-company">Company</label>
+                    <input class="company" type="text" name="cd-company" id="cd-company">
+                </div> 
+
+                <div class="icon">
+                    <label class="cd-label" for="cd-email">Email</label>
+                    <input class="email error" type="email" name="cd-email" id="cd-email" required>
+                </div>
+                <div>
+                    <p class="cd-select icon">
+                        <select class="budget">
+                            <option value="0">Select Budget</option>
+                            <option value="1">&lt; $5000</option>
+                            <option value="2">$5000 - $10000</option>
+                            <option value="3">&gt; $10000</option>
+                        </select>
+                    </p>
+                </div> 
+                <div class="icon">
+                    <label class="cd-label" for="cd-textarea">Project description</label>
+                    <textarea class="message" name="cd-textarea" id="cd-textarea" required></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Send Message">
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/modernizr.js"></script>
+
+</div>
+</body>
+</html>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery.fullPage.min.js"></script>
+<script src="lib/jquery.easing.1.3.js"></script>
+<script src="lib/jquery.isotope.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/handler.js"></script>
+<script src="js/resumeEnter.js"></script>

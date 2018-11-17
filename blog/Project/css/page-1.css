@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tx{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    position: absolute;
+    left:0;top:0;
+    right: 0;bottom: 0;
+    margin: auto;
+}
+.tx img{
+    border-radius: 50%;
+    transition: All 0.4s ease-in-out;
+}
+.tx:hover{
+    opacity: 0.5;
+}
+.kuang{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border:5px solid #ecab18;
+        border-right-color:#1ad280;
+        border-bottom-color:#1ad280;
+        border-radius: 50%;
+        animation:rotate 2s infinite;
+        /* transition: All 0.4s ease-in-out; */
+}
+@keyframes rotate{
+    50%   {transform: rotate(90deg)}
+    100% {transform: rotate(360deg)}
+}
+/* .kuang:hover{
+        transform:rotate(180deg);
+} */
+.xiansi{
+    display:none;
+    width:300px;
+    height:100px;
+    background:red;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    background:rgba(0,0,0,0.15);
+    position:absolute;
+    margin:auto;
+    left:80px;
+    top:450px;
+    right:0;
+    bottom:0;
+}
+.xiansi:hover{
+    color: black;
+
+}
+.xiansi-info{
+    width:300px;
+    height:60px;
+    /*background: red;*/
+    position:absolute;
+    margin:auto;
+    left:140px;
+    top:520px;
+    right:0;
+    bottom:0;
+}
+.xiansi-info span{
+    font-size:16px;
+    display:inline-block;
+    float:right;
+    margin:0 10px 0 0;
+    cursor:pointer;
+}
+
+#window{
+    width: 600px;
+    height: 400px;
+    position:absolute;
+    left:50px;
+    top:200px;
+    font-size: 24px;
+    color: #fffef0;
+}
+#show-board{
+    width: 580px;
+    height: 360px;
+    color: #eee;
+    padding: 10px;
+    font-family: Consolas, serif;
+}
+.jieshao{
+    font-size: 25px;
+    font-weight: bolder;
+    position:absolute;
+    left:100px;
+    top:0;
+    color: skyblue;
+}
+.zhiye li{
+    font-size: 16px;
+    color: skyblue;
+    font-weight: bolder;
+    text-align: center;
+    margin: 40px 100px;
+    animation:myfirst 5s infinite;
+}
+@keyframes myfirst{
+    0%   {transform: rotate(30deg) scale(1, 1)}
+    100% {transform: rotate(360deg)scale(2, 2)}
+}
+.jiejian{
+    width: 400px;
+    height: 600px;
+    /* background: red; */
+    position:absolute;
+    right:100px;
+    top:150px;
+    z-index: 150;
+}
+.jiejian li{
+    font-size: 30px;
+    color: skyblue;
+    font-weight: bolder;
+    text-align: center;
+    margin: 40px 20px;
+    animation:mysecond 5s infinite;
+}
+@keyframes mysecond{
+    0%   {transform: rotate(30deg)}
+    100% {transform: rotate(360deg)}
+}
+.box {
+    width: 250px;
+    height: 30px;
+    margin: 100px auto;
+    position:absolute;
+    bottom:10px;
+    right: 40px;
+    /*background: red;*/
+    transform: scale(1.1);
+}
+.box > div {
+    width: 30px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+    border-radius: 4px;
+    background-size: contain;
+    margin: 0 10px;
+}
+#menu{
+    font-size: 20px;
+    color: #adadad;
+    font-family: "Microsoft YaHei", "simsun", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,381 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-14 18:03:52
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-19 17:37:16
+*/
+@import url(base.css);
+.icon-header{
+	font-family: 'iconfont';
+	font-style: normal;
+}
+.icon-vipcrown{
+	font-size: 0.48rem;
+	color: yellow;
+	float: left;
+	margin-left: 0.2rem;
+
+}
+.icon-xinxi{
+	float: right;
+	font-size: 0.64rem;
+	color: white;
+}
+.icon-ziyuanshezhi{
+	float: right;
+	font-size: 0.64rem;
+	color: white;
+	margin-left: 0.4rem;
+}
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1.44rem;
+	background: red;
+}
+header .h-left{
+	float: left;
+	height: 0.6rem;
+	margin-top: 0.5rem;
+	margin-left: 0.3rem;
+}
+header .h-left a{
+	float: left;
+	font-size: 0.4rem;
+	color: white;
+}
+header .h-left span{
+    float: left;
+	font-size: 0.3rem;
+	color: white;
+	margin-left: 0.1rem;
+	margin-top: 0.1rem;
+}
+header .h-right{
+	float: right;
+	margin-top: 0.4rem;
+	margin-right: 0.4rem;
+}
+
+/* 主内容开始编写 */
+main{
+	margin-top: 1.44rem;
+	width: 100%;
+	overflow: hidden;
+	background: #f2f2f2;
+	margin-bottom: 1.44rem;
+}
+main .first-row{
+	width: 100%;
+	height: 2.4rem;
+	background: white;
+}
+main .first-row a{
+	float: left;
+	width: 25%;
+}
+main .first-row a p{
+	text-align: center;
+	font-size: 0.34rem;
+	
+}
+main .first-row a .p1{
+	margin-top: 0.8rem;
+	color: #373636;
+	font-weight: bold;
+}
+main .first-row a .p2{
+	margin-top: 0.25rem;
+	color: #3c3c3c;
+}
+
+main .dingdan{
+	margin-top: 0.2rem;
+	width: 100%;
+	/* height: 3.7rem; */
+	background: white;
+}
+main .dingdan .din-top{
+    width: 100%;
+    height: 1.34rem;
+    border-bottom: 0.02rem solid #f2f2f2;
+}
+main .dingdan .din-top .ding-tp-le{
+	float: left;
+	height: 100%;
+	width: 2.22rem;
+	font-size: 0.38rem;
+	text-align: center;
+	line-height: 1.34rem;
+}
+main .dingdan .din-top .ding-tp-le a{
+	color: black;
+}
+main .dingdan .din-top .ding-tp-rig{
+	float: right;
+	height: 100%;
+	width: 3.45rem;
+	font-size: 0.38rem;
+	text-align: center;
+	line-height: 1.34rem;
+}
+main .dingdan .din-top .ding-tp-rig a{
+	color: red;
+}
+main .dingdan .din-down{
+	width: 100%;
+	height: 2.34rem;
+	/* background: red; */
+}
+main .dingdan .din-down a{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+main .dingdan .din-down a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+/* 我的云书房开始编写 */
+main .shufang{
+	display: block;
+	width: 100%;
+	height: 1.36rem;
+	margin-top: 0.22rem;
+	background: white;
+}
+main .shufang .image{
+	float: left;
+	width: 4.34rem;
+	height: 1.36rem;
+}
+main .shufang .image img{
+	display: block;
+	width:4.34rem;
+	height: 1.36rem;
+} 
+main .shufang .sf-rukou{
+	float: right;
+	height: 100%;
+	width: 3.3rem;
+	font-size: 0.32rem;
+	color: #999999;
+	line-height: 1.36rem;
+	text-align: center;
+}
+main .gongju{
+	width: 100%;
+	margin-top: 0.22rem;
+}
+main .gongju .gj-top{
+    width: 100%;
+    height: 1.35rem;
+    padding-left: 0.32rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    background: white;
+    line-height: 1.35rem;
+    border-bottom:  0.01rem solid #f2f2f2;
+}
+main .gongju .gj-row{
+	width: 100%;
+	height: 2.7rem;
+}
+main .gongju .gj-row a{
+	float: left;
+	width: 25%;
+	height: 100%;
+}
+main .gongju .gj-row a img{
+	display: block;
+	width: 2.7rem;
+	height: 2.7rem;
+}
+
+main .huodong{
+	width: 100%;
+	margin-top: 0.2rem;
+}
+main .huodong .hd-row{
+	display: block;
+	width: 100%;
+	height: 1.36rem;
+	background: white;
+}
+main .huodong .hd-row  img{
+	float: left;
+	width: 1.52rem;
+	height: 1.36rem;
+}
+main .huodong .hd-row .span1{
+	float: left;
+	font-size: 0.34rem;
+	width: 7.75rem;
+	height: 100%;
+	color: #646464;
+	line-height: 1.36rem;
+
+}
+main .huodong .hd-row .span2{
+	font-size: 0.4rem;
+	float: right;
+	width: 1.2rem;
+	height: 100%;
+	line-height: 1.36rem;
+	text-align: center;
+}
+main .chaozhiremai .czrm-top{
+	margin-top: 0.22rem;
+	width: 100%;
+	height: 1.32rem;
+	background: white;
+	border-bottom: 0.01rem solid #f2f2f2;
+	padding-left: 0.3rem;
+	font-size: 0.4rem;
+	color: #353535;
+	line-height: 1.32rem;
+}
+main .chaozhiremai .czrm-down{
+	width: 100%;
+	height: 3.1rem;
+	background: white;
+	padding-top: 0.45rem;
+}
+main .chaozhiremai .czrm-down img{
+	display: block;
+	width: 9.93rem;
+	height: 2.21rem;
+	margin: 0 auto;
+}
+
+/* 猜你喜欢开始编写 */
+.icon-keai{
+
+}
+main .cainixihuan .cnxh-title{
+	height: 1.04rem;
+	width: 100%;
+	/* background: red; */
+}
+main .cainixihuan .cnxh-title .le-line{
+	float: left;
+	width: 1.8rem;
+	height: 0.02rem;
+	margin-left: 0.48rem;
+	margin-top: 0.47rem;
+	background: #c8c8c8;
+}
+main .cainixihuan .cnxh-title .rig-line{
+	float: right;
+	width: 1.8rem;
+	height: 0.02rem;
+	margin-right: 0.48rem;
+	margin-top: 0.47rem;
+	background: #c8c8c8;
+}
+main .cainixihuan .cnxh-title .word{
+    float: left;
+    font-size: 0.38rem;
+    color: black;
+    margin-left: 0.8rem;
+    margin-top: 0.2rem;
+}
+main .cainixihuan .cnxh-row{
+	margin-top: 0.1rem;
+	width: 100%;
+	height: 7.74rem;
+}  
+main .cainixihuan .cnxh-row a{
+	float: left;
+	width: 50%;
+	height: 100%;
+	background: white;
+	border-left: 0.06rem solid #f2f2f2;
+	border-right: 0.06rem solid #f2f2f2;
+}
+main .cainixihuan .cnxh-row a img{
+	display: block;
+	width: 5.28rem;
+	height: 6.59rem;
+}
+main .cainixihuan .cnxh-row .price{
+   height: 0.4rem;
+   width: 100%;
+   margin-top: 0.1rem;
+   margin-left: 0.25rem;
+}
+main .cainixihuan .cnxh-row .price .first{
+	float: left;
+	font-size: 0.4rem;
+	color: #f8664f;
+	font-weight: bold;
+}
+main .cainixihuan .cnxh-row .price .second{
+	float: left;
+	font-size: 0.34rem;
+	color: #f8664f;
+	font-weight: bold;
+	margin-top: 0.08rem;
+}
+main .cainixihuan .cnxh-row .price  .third{
+	float: left;
+	/* height: 0.4rem;
+	width: 1.3rem; */
+	padding: 0.05rem;
+	border-radius: 0.08rem;
+	background: red;
+	color: white;
+	font-size: 0.26rem;
+	margin-left: 0.4rem;
+	margin-top: 0.08rem;
+	text-align: center;
+	line-height: 0.4rem;
+}
+
+footer{
+    /* display: none; */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1.44rem;
+	border-top: 0.01rem solid #c8c8c8;
+	background: #f9f9f9;
+}
+.icon-footer{
+	font-family: 'iconfont';
+	font-style: normal;
+	font-size: 0.62rem;
+	color: #5d5f6a;
+}
+footer .fo{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+footer .fo i{
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.15rem;
+	width: 0.62rem;
+	height: 0.62rem;
+}
+footer .fo span{
+	display: block;
+	font-size: 0.28rem;
+	color: #5d5f6a;
+	margin: 0 auto;
+	margin-top: 0.08rem;
+	text-align: center;
+}
+footer .fo:nth-child(5) i{
+	color: orange;
+}
+footer .fo:nth-child(5) span{
+	color: orange;
+}
+
+

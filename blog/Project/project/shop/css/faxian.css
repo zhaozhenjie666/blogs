@@ -1,0 +1,189 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-15 09:08:51
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-19 18:32:17
+*/
+@import url(base.css);
+header{
+	width: 100%;
+	height: 4.32rem;
+}
+header img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+main{
+	width: 100%;
+	background: #f6f6f6;
+	padding-top: 0.24rem;
+	margin-bottom: 1.44rem;
+}
+main .title{
+	width: 100%;
+	height: 1.8rem;
+	overflow: hidden;
+	background: white;
+}
+main .title .s1{
+	float: left;
+	height: 100%;
+	line-height: 1.8rem;
+   font-size: 0.48rem;
+   color: #646464;
+   margin-left: 4.5rem;
+}
+main .title  a{
+	float: right;
+	height: 100%;
+	line-height: 1.8rem;
+	color: #e53e30;
+	font-size: 0.34rem;
+	margin-right: 0.48rem;
+}
+
+.icon-xtubiao{
+	float: left;
+	font-family: 'iconfont';
+	font-style: normal;
+}
+.icon-wujiaoxing{
+	float: left;
+	font-size: 0.38rem;
+	color: #ff8161;
+}
+main .comment{
+	width: 100%;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	background: white;
+}
+main .comment .co-top{
+	width: 100%;
+	overflow: hidden;
+}
+main .comment .co-top img{
+	float: left;
+	width: 1.26rem;
+	height: 1.35rem;
+}
+main .comment .co-top .right{
+	float: left;
+}
+main .comment .co-top .right .p1{
+	font-size: 0.34rem;
+	color: #969696;
+	margin-bottom: 0.2rem;
+}
+main .comment .co-top .right .p2{
+	overflow: hidden;
+}
+main .comment .co-top .right span{
+	float: left;
+	color: #ff8161;
+	font-size: 0.38rem;
+	padding-left: 0.08rem;
+	padding-bottom: 0.08rem;
+}
+main .comment .co-top .right i{
+	color: #ff8161;
+}
+main .comment .co-center{
+	font-size: 0.36rem;
+	color: #3c3c3c;
+	width: 100%;
+	/* height: 1.6rem; */
+	overflow: hidden;
+	margin-bottom: 0.2rem;
+}
+main .comment .img1{
+	width: 100%;
+	height: 2.16rem;
+}
+main .comment .img1 img{
+	display: block;
+	width: 100%;
+	height: 2.16rem;
+}
+
+main .comment .co-down{
+	width: 100%;
+	height: 1rem;
+	padding-top: 0.28rem;
+}
+main .comment .co-down i{
+	float: right;
+	font-size: 0.48rem;
+	color: #a3a3a3;
+	margin-left: 0.5rem
+}
+main .comment .co-down span{
+	float: right;
+	font-size: 0.32rem;
+	color: #a3a3a3;
+}
+main .comment .co-down .p1{
+	float: left;
+	font-size: 0.34rem;
+	color: #969696;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    /* display: none; */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1.44rem;
+	border-top: 0.01rem solid #c8c8c8;
+	background: #f9f9f9;
+}
+.icon-footer{
+	font-family: 'iconfont';
+	font-style: normal;
+	font-size: 0.62rem;
+	color: #5d5f6a;
+}
+footer .fo{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+footer .fo i{
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.15rem;
+	width: 0.62rem;
+	height: 0.62rem;
+}
+footer .fo span{
+	display: block;
+	font-size: 0.28rem;
+	color: #5d5f6a;
+	margin: 0 auto;
+	margin-top: 0.08rem;
+	text-align: center;
+}
+footer .fo:nth-child(3) i{
+	color: orange;
+}
+footer .fo:nth-child(3) span{
+	color: orange;
+}
+
+

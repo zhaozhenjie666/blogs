@@ -1,0 +1,211 @@
+/*
+* @Author: Administrator
+* @Date:   2017-10-13 17:58:53
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-10-18 23:34:27
+*/
+@import url(base.css);
+header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1.32rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 999;
+	border-bottom: 0.01rem solid #b2b1b1;
+}
+header .h-center{
+	position: relative;
+	width: 8rem;
+	height: 0.9rem;
+	/* background: yellow; */
+}
+header .h-center .search{
+	float: left;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	background: #f2f3f5;
+	border-radius: 0.9rem;
+	padding-left: 1.05rem;
+	color: #a0acb4;
+	font-size: 0.32rem;
+	border: none;
+}
+header .h-right{
+	width: 1.08rem;
+	height: 0.9rem;
+	/* background: yellow; */
+    /* line-height: 0.9rem; */
+    padding-bottom: 0.04rem;
+
+}
+header .h-right i{
+	float: right;
+	font-size: 0.8rem;
+}
+.h-icon{
+	font-family: 'iconfont';
+	font-size: 0.5rem;
+	color: #7a8993;
+	font-style: normal;
+	float: left;
+}
+.h-center-icon{
+	position: absolute;
+	font-family: 'iconfont';
+	font-size: 0.7rem;
+	color: #7a8993;
+	font-style: normal;
+}
+.icon-sousuo{
+	left: 0.2rem;
+	top: 0.1rem;
+	color: #b0bdc6;
+}
+.icon-huatong{
+	right: 0.3rem;
+	top: 0.12rem;
+	color: #949494;
+	font-size: 0.6rem;
+} 
+/* 主内容样式开始编写 */
+main{
+	margin-top: 1.32rem;
+	width: 100%;
+	background: white;
+	overflow: hidden;
+	margin-bottom: 1.44rem;
+}
+main .m-left{
+	float: left;
+    width: 2.88rem;
+}
+main .m-left a{
+	display: block;
+	width: 100%;
+	height: 1.68rem;
+	background: #f3f3f3;
+	font-size: 0.4rem;
+	color: #323232;
+	text-align: center;
+	line-height: 1.68rem;
+}
+main .m-left a:first-child{
+	background: white;
+	border-left: 0.08rem solid red;
+}
+
+/* 右侧分类开始编写 */
+.m-right {
+	float: right;
+	width: 7.9rem;
+}
+.m-right  .title{
+	padding-top: 0.5rem;
+	color: black;
+	font-weight: bold;
+	font-size: 0.38rem;
+	padding-left: 0.3rem;
+}
+.m-right  .mr-top{
+    width: 100%;
+}
+
+.m-right  .mr-top .row{
+	width: 100%;
+	height: 2.95rem;
+    display: flex;
+    padding-top: 0.45rem;
+}
+.m-right  .mr-top .row a{
+	float: left;
+	width: calc(100%/3);
+	height: 100%;
+	/* background: red; */
+}
+.m-right  .mr-top .row a img{
+	display: block;
+	width: 1.68rem;
+	height: 1.68rem;
+	margin-left: 0.476rem;
+}
+.m-right  .mr-top .row p{
+	text-align: center;
+	font-size: 0.36rem;
+	color: #646464;
+	margin-top: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer开始编写 */
+
+footer{
+    /* display: none; */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1.44rem;
+	border-top: 0.01rem solid #c8c8c8;
+	background: #f9f9f9;
+}
+.icon-footer{
+	font-family: 'iconfont';
+	font-style: normal;
+	font-size: 0.62rem;
+	color: #5d5f6a;
+}
+footer .fo{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+footer .fo i{
+	display: block;
+	margin: 0 auto;
+	margin-top: 0.15rem;
+	width: 0.62rem;
+	height: 0.62rem;
+}
+footer .fo span{
+	display: block;
+	font-size: 0.28rem;
+	color: #5d5f6a;
+	margin: 0 auto;
+	margin-top: 0.08rem;
+	text-align: center;
+}
+footer .fo:nth-child(2) i{
+	color: orange;
+}
+footer .fo:nth-child(2) span{
+	color: orange;
+}
+
